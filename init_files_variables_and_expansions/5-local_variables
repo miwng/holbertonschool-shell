@@ -1,0 +1,2 @@
+#!/bin/bash
+printenv | set -o posix | grep -v "^_" | echo | declare -F | sort 
